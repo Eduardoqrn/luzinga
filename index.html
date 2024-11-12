@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luz Ingá</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a><img class="logo_image" src="./Images/Logo.png" alt="luz_logo"></a>
+            <h1 class="logo_name">Luz Ingá</h1>
+        </div>
+        <div class="menu_mobile">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+        </div>
+        <nav class="menu">
+            <li><a href="#services">Sobre</a></li>
+            <li><a href="#products">Serviços</a></li>
+            <li><a href="#form">contato</a></li>
+        </nav>
+    </header>
+    <main class="home_page">
+        <section class="hero">
+            <section class="informations_hero">
+                <div class="text_hero">
+                    <h4 class="info_hero">DECORAÇÕES</h4>
+                    <h1 class="title_hero">SUA INSPIRAÇÃO EM DECORAÇÃO</h1>
+                </div>
+                <div class="text_hero_second">
+                    <p class="paragraph_hero">Lorem ipsum dolor sit amet consectetur. Quis adipiscing tellus mauris
+                        lorem
+                        feugiat nec.</p>
+                    <a href="#services" class="button_hero">SAIBA MAIS ➤</a>
+                </div>
+            </section>
+            <section class="figure_hero" id="slideshow">
+                <div class="slides"></div>
+                <div class="progress-bar"><div class="progress"></div></div>
+            </section>
+        </section>
+        
+    </main>
+    <section class="strap">
+        <div class="text_strap">
+            <h1 class="title_strap">Veja o que podemos fazer por você</h1>
+            <p class="paragraph_strap">
+                Oferecemos soluções criativas e personalizadas para
+                transformar seus ambientes com elegância e estilo.
+                Nossa equipe especializada garante que cada detalhe da
+                decoração reflita a sua identidade.</p>
+        </div>
+        <div class="services_strap">
+            <div class="stick_strap"></div>
+            <div>
+                <h1 class="type_strap">✦ CONSULTORIA ESPECIALIZADA </hi>
+            </div>
+            <div class="stick_strap"></div>
+            <div>
+                <h1 class="type_strap">✦ DECORAÇÃO DE SALAS</h1>
+            </div>
+            <div class="stick_strap"></div>
+            <div>
+                <h1 class="type_strap">✦ MOBILIAS E DECORAÇÕES</h1>
+            </div>
+        </div>
+    </section>
+    <section>
+        <article id="services" class="services">
+            <img class="image_services">
+            <div class="text_services">
+                <h2 class="title_services">FLUXO DE TRABALHO DELICADO</h2>
+                <p class="paragraph_services">Nossa equipe é dedicada a transformar seus espaços em ambientes
+                    sofisticados e acolhedores. Combinamos tendências modernas com o toque clássico, garantindo uma
+                    experiência visual única. Oferecemos uma seleção exclusiva de peças que equilibram funcionalidade e
+                    estilo. Nosso processo colaborativo garante que suas necessidades e preferências sejam sempre
+                    priorizadas. Descubra como podemos elevar a estética do seu lar ou espaço comercial com soluções
+                    personalizadas e de alta qualidade</p>
+            </div>
+            <div id="products"></div>
+        </article>
+    </section>
+    <section class="products">
+        <div class="text_products">
+            <h2 class="title_products">NOSSAS ESPECIALIDADES</h2>
+            <p class="paragraph_products">nós fornecemos o fluxo de trabalho mais fácil e suave de design de interiores,
+                oferecendo elegância em decorações</p>
+        </div>
+        <div class="options">
+            <article class="light">
+                <img class="image_light">
+                <div class="text_light">
+                    <h3 class="title_light">LUZES</h3>
+                    <p class="paragraph_light">Luzes de decoração são elementos que adicionam charme e criando uma
+                        atmosfera única e iluminada.</p>
+                </div>
+            </article>
+            <article class="lighting">
+                <img class="image_lighting" >
+                <div class="text_lighting">
+                    <h3 class="title_lighting">LUMINÁRIAS</h3>
+                    <p class="paragraph_lighting">Luminária é um elemento de design funcional que harmoniza estética e
+                        tecnologia, criando atmosferas e valorizando os espaços com elegância e eficiência</p>
+                </div>
+            </article>
+            <article class="chandeliers">
+                <img class="image_chandeliers">
+                <div class="text_chandeliers">
+                    <h3 class="title_chandeliers">LUSTRES</h3>
+                    <p class="paragraph_chandeliers">Lustres são luminárias suspensas ornamentadas, projetadas para
+                        distribuir luz de forma sofisticada, conferindo imponência e estilo refinado a ambientes.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="contact">
+        <article class="about_contact">
+            <h2 class="title_contact">✦ se cadastre!</h2>
+            <p class="paragraph_contact">Para que possamos entrar em contato e fazer uma
+                consultoria e orçamento especialmente para você!</p>
+            <img class="image_contact" src="Images/Cadastro.png" alt="Cadastro">
+        </article>
+        <form id="form" class="form">
+            <div class="column1">
+                <div>
+                    <input type="text" class="inputs required" id="username" placeholder="Nome"
+                        oninput="nameValidate()">
+                    <span class="span-required">Nome deve ter no minimo 3 caracteres</span>
+                </div>
+                <div>
+                    <input type="tel" class="inputs required" id="phone" placeholder="Telefone"
+                        oninput="numberValidate()">
+                    <span class="span-required">Número deve ter no minimo 11 caracteres</span>
+                </div>
+            </div>
+            <div class="column2">
+                <div>
+                    <input type="text" class="inputs required" id="adress" placeholder="Endereço"
+                        oninput="adressValidate()">
+                    <span class="span-required">Endereço deve ter no minimo 10 caracteres</span>
+                </div>
+                <div>
+                    <input type="text" class="inputs required" id="city" placeholder="Cidade" oninput="cityValidate()">
+                    <span class="span-required">Endereço deve ter no minimo 10 caracteres</span>
+                </div>
+            </div>
+            <div class="column3">
+                <input type="text" class="inputs required" id="category" placeholder="Categoria"
+                    oninput="categoryValidate()">
+                <span class="span-required">Endereço deve ter no minimo 10 caracteres</span>
+            </div>
+            <div class="column4">
+                <input type="email" class="inputs required" id="email" placeholder="E-mail" oninput="emailValidate()">
+                <span class="span-required">Digite um email valido</span>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div class="second_menu">
+            <p>Inicio</p>
+            <p>Sobre</p>
+            <p>Especialidades</p>
+        </div>
+        <div class="image_footer">
+            <img src="./Images/Instagram.png">
+            <img src="./Images/Email.png">
+            <img src="./Images/Call.png">
+        </div>
+        <p class="paragraph_footer">© Copyright 2024 - Luz Ingá</p>
+    </footer>
+</body>
+<script src="./js/script.js"></script>
+<script src="./js/mobile-navbar.js"></script>
+
+</html>
